@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Academix E-library</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(pexels-joshsorenson-990432.jpg);
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 60px; 
+        }
+
+        nav {
+            width: 100%;
+            background-color: #007bff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        .library-page {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .book-item img {
+            width: 100px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .book-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .book-item p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .book-item a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .book-item a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="enroll.html">Enroll</a></li>
+            <li><a href="advertisement.html">Advertisement</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="Academix.html">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="library-page">
+        <h1><font color="white">Welcome to the Academix E-library</h1></font>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="DS-Book-1-229x300.jpg" alt="Book Cover">
+                <h3>Practical Statistics for Data Scientists</h3>
+                <p>Author: Peter Bruce & Andrew Bruce</p>
+                <a href="PracticalStatisticsforDataScientists50EssentialConceptsUsingRandPythonbyPeterBruceAndrewBrucePeterGedeck.pdf">Read</a>
+            </div>
+            <div class="book-item">
+                <img src="aibook.jpg" alt="Book Cover">
+                <h3>Artificial Intelligence For All</h3>
+                <p>Author: Utpal Chakraborty</p>
+                <a href="Utpal Chakraborty 2.pdf">Read</a>
+            </div>
+            <div class="book-item">
+                <img src="cloudbook.jpg" alt="Book Cover">
+                <h3>Explain the Cloud Like I'm 10</h3>
+                <p>Author: Todd Hoff</p>
+                <a href="https://www.google.co.ke/books/edition/Explain_the_Cloud_Like_I_m_10/utlwDwAAQBAJ?hl=en&gbpv=1&pg=PT3&printsec=frontcover">Read</a>
+            </div>
+            <div class="book-item">
+                <img src="cbbook.jpeg" alt="Book Cover">
+                <h3>Social Engineering: The Science of Human Hacking</h3>
+                <p>Author: Christopher Hadnagy</p>
+                <a href="Social Engineering The Science of Human Hacking 2nd Edition.pdf">Read</a>
+            </div>
+            <div class="book-item">
+                <img src="sdbook.jpeg" alt="Book Cover">
+                <h3>Think like a programmer</h3>
+                <p>Author: V.Anton Spraul</p>
+                <a href="V_Anton_Spraul-Think_Like_a_Programmer-EN.pdf">Read</a>
+            </div>
+            <div class="book-item">
+                <img src="bmbook.jpg" alt="Book Cover">
+                <h3>The Five Dysfunctions of a Team</h3>
+                <p>Author: Patrick Lencioni</p>
+                <a href="https://wtf.tw/ref/lencioni.pdf">Read</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(pexels-element5-1370296.jpg);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 60px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #007bff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        .enrollment-page {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="e-library.html">E-library</a></li>
+            <li><a href="advertisement.html">Advertisement</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="Academix.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="enrollment-page">
+        <h1>Course Enrollment</h1>
+        <form action="confirmation page.html" method="post">
+            <label for="course">Select Course</label>
+            <select id="course" name="course">
+                <option value="course1">Data Science</option>
+                <option value="course2">Cyber Security</option>
+                <option value="course3">Software Development</option>
+                <option value="course4">Artificial Intelligence</option>
+                <option value="course3">Business Management</option>
+            </select>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Payment Details</h2>
+
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <label for="billing-address">Billing Address</label>
+            <input type="text" id="billing-address" name="billing-address" required>
+
+            <button type="submit" class="btn">Enroll Now</button>
+        </form>
+    </div>
+</body>
+</html>
